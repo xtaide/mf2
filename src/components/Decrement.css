@@ -1,0 +1,9 @@
+.decrement {
+    width: 100%;
+    background: #d26a6a;
+    color:white;
+    padding:1em;
+    border-radius: 1em;
+    cursor:pointer;
+    border:none;
+}
