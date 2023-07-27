@@ -7,7 +7,7 @@ module.exports = (_, argv) => ({
     publicPath: argv.mode ===
     "development"
         ? "http://localhost:8082/"
-        : "https://mf2-zeta.vercel.app/",
+        : "https://mf2-git-main-xtaide.vercel.app/",
   },
 
   resolve: {
@@ -46,9 +46,7 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "mf2",
       filename: "remoteEntry.js",
-      remotes: {
-        store:"store@http://localhost:8083/remoteEntry.js"
-      },
+      remotes: {},
       exposes: {
         "./Decrement":"./src/components/Decrement"
       },
